@@ -52,9 +52,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        panel.setBackground(new java.awt.Color(51, 51, 51));
         panel.setLayout(new java.awt.GridBagLayout());
 
         title.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        title.setForeground(new java.awt.Color(255, 255, 255));
         title.setText("CRUD");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -62,8 +64,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(title, gridBagConstraints);
 
+        key.setForeground(new java.awt.Color(255, 255, 255));
         key.setText("Key");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -71,8 +75,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(key, gridBagConstraints);
 
+        name.setForeground(new java.awt.Color(255, 255, 255));
         name.setText("Name:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -80,8 +86,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(name, gridBagConstraints);
 
+        address.setForeground(new java.awt.Color(255, 255, 255));
         address.setText("Address:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -89,8 +97,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(address, gridBagConstraints);
 
+        phone.setForeground(new java.awt.Color(255, 255, 255));
         phone.setText("Phone Number:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -98,8 +108,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(phone, gridBagConstraints);
 
+        email.setForeground(new java.awt.Color(255, 255, 255));
         email.setText("Email:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -107,8 +119,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(email, gridBagConstraints);
 
+        birthday.setForeground(new java.awt.Color(255, 255, 255));
         birthday.setText("Birthday:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -116,8 +130,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(birthday, gridBagConstraints);
 
+        gender.setForeground(new java.awt.Color(255, 255, 255));
         gender.setText("Gender:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -125,6 +141,7 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(gender, gridBagConstraints);
 
         fieldKey.setPreferredSize(new java.awt.Dimension(94, 22));
@@ -134,17 +151,19 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldKey, gridBagConstraints);
 
-        fieldID.setPreferredSize(new java.awt.Dimension(32, 22));
+        fieldID.setPreferredSize(new java.awt.Dimension(22, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldID, gridBagConstraints);
 
-        fieldName.setPreferredSize(new java.awt.Dimension(164, 22));
+        fieldName.setPreferredSize(new java.awt.Dimension(234, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -152,9 +171,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldName, gridBagConstraints);
 
-        fieldAddress.setPreferredSize(new java.awt.Dimension(164, 22));
+        fieldAddress.setPreferredSize(new java.awt.Dimension(234, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -162,9 +182,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldAddress, gridBagConstraints);
 
-        fieldNumber.setPreferredSize(new java.awt.Dimension(164, 22));
+        fieldNumber.setPreferredSize(new java.awt.Dimension(234, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -172,9 +193,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldNumber, gridBagConstraints);
 
-        fieldEmail.setPreferredSize(new java.awt.Dimension(164, 22));
+        fieldEmail.setPreferredSize(new java.awt.Dimension(234, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -182,9 +204,10 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldEmail, gridBagConstraints);
 
-        fieldBirthday.setPreferredSize(new java.awt.Dimension(164, 22));
+        fieldBirthday.setPreferredSize(new java.awt.Dimension(234, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -192,8 +215,11 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(fieldBirthday, gridBagConstraints);
 
+        buttonSearch.setBackground(new java.awt.Color(102, 102, 102));
+        buttonSearch.setForeground(new java.awt.Color(255, 255, 255));
         buttonSearch.setText("Search");
         buttonSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         buttonSearch.setPreferredSize(new java.awt.Dimension(82, 22));
@@ -202,10 +228,12 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.gridy = 1;
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(buttonSearch, gridBagConstraints);
 
-        comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        comboGender.setPreferredSize(new java.awt.Dimension(92, 22));
+        comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select...", "Male", "Female", "Other" }));
+        comboGender.setMinimumSize(new java.awt.Dimension(142, 22));
+        comboGender.setPreferredSize(new java.awt.Dimension(142, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 7;
@@ -213,22 +241,31 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel.add(comboGender, gridBagConstraints);
 
+        panel2.setBackground(new java.awt.Color(51, 51, 51));
         panel2.setLayout(new java.awt.GridBagLayout());
 
+        insertButton.setBackground(new java.awt.Color(102, 102, 102));
+        insertButton.setForeground(new java.awt.Color(255, 255, 255));
         insertButton.setText("Insert");
         insertButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        insertButton.setMinimumSize(new java.awt.Dimension(82, 22));
         insertButton.setPreferredSize(new java.awt.Dimension(82, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel2.add(insertButton, gridBagConstraints);
 
+        updateButton.setBackground(new java.awt.Color(102, 102, 102));
+        updateButton.setForeground(new java.awt.Color(255, 255, 255));
         updateButton.setText("Update");
         updateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        updateButton.setMinimumSize(new java.awt.Dimension(82, 22));
         updateButton.setPreferredSize(new java.awt.Dimension(82, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -236,10 +273,14 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel2.add(updateButton, gridBagConstraints);
 
+        deleteButton.setBackground(new java.awt.Color(102, 102, 102));
+        deleteButton.setForeground(new java.awt.Color(255, 255, 255));
         deleteButton.setText("Delete");
         deleteButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        deleteButton.setMinimumSize(new java.awt.Dimension(82, 22));
         deleteButton.setPreferredSize(new java.awt.Dimension(82, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -247,10 +288,14 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel2.add(deleteButton, gridBagConstraints);
 
+        cleanButton.setBackground(new java.awt.Color(102, 102, 102));
+        cleanButton.setForeground(new java.awt.Color(255, 255, 255));
         cleanButton.setText("Clean");
         cleanButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cleanButton.setMinimumSize(new java.awt.Dimension(82, 22));
         cleanButton.setPreferredSize(new java.awt.Dimension(82, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -258,10 +303,14 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel2.add(cleanButton, gridBagConstraints);
 
+        exitButton.setBackground(new java.awt.Color(102, 102, 102));
+        exitButton.setForeground(new java.awt.Color(255, 255, 255));
         exitButton.setText("Exit");
         exitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        exitButton.setMinimumSize(new java.awt.Dimension(82, 22));
         exitButton.setPreferredSize(new java.awt.Dimension(82, 22));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -269,6 +318,7 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 10;
         gridBagConstraints.ipady = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         panel2.add(exitButton, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -276,14 +326,14 @@ public class MainFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+            .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE))
+                .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE))
         );
 
         pack();

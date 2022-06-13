@@ -1,6 +1,7 @@
 
 package control;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.ConsultPerson;
@@ -20,12 +21,18 @@ public class Control implements ActionListener{
         this.consultPerson = consultPerson;
         
         mainFrame.getInsertButton().addActionListener(this);
+        mainFrame.getCleanButton().addActionListener(this);
+        mainFrame.getExitButton().addActionListener(this);
+        mainFrame.getButtonSearch().addActionListener(this);
+        mainFrame.getUpdateButton().addActionListener(this);
+        mainFrame.getDeleteButton().addActionListener(this);
     }
     
     public void init(){
         mainFrame.setTitle("CRUD");
-        mainFrame.setSize(500, 480);
+        mainFrame.setSize(540, 490);
         mainFrame.setLocationRelativeTo(null);
+        mainFrame.getContentPane().setBackground(new Color(51,51,51));
         mainFrame.setResizable(false);
         mainFrame.getFieldID().setVisible(false);
     }
@@ -43,11 +50,28 @@ public class Control implements ActionListener{
             
             if(consultPerson.inserPerson(person)){
                 JOptionPane.showMessageDialog(null, "Sucessfully registered.");
+                cleanFields();
             }else{
                 JOptionPane.showMessageDialog(null, "Error trying to insert data.");
             }
         }
+        
+        if(e.getSource() == mainFrame.getCleanButton()){
+            cleanFields();
+        }
+        
+        if(e.getSource() == mainFrame.getExitButton()){
+            System.exit(0);
+        }
     }
     
-
+    private void cleanFields(){
+        mainFrame.getFieldKey().setText("");
+        mainFrame.getFieldName().setText("");
+        mainFrame.getFieldAddress().setText("");
+        mainFrame.getFieldNumber().setText("");
+        mainFrame.getFieldEmail().setText("");
+        mainFrame.getFieldBirthday().setText("");
+        mainFrame.getComboGender().setSelectedIndex(0);
+    }
 }
